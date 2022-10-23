@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <style>
+            #center{
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+            body{
+                background-color: black;
+            }
+        </style>
+       
+    </head>
+    
+    <body>
+        <a onclick="playVideo(); ">
+            <video id="center" width="640">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+        </a>
+        <script>
+            var video = document.getElementById("center");
+            window.onload= playVideo;
+            function playVideo() {
+                video.play();
+            }
+        </script>
+    </body>
+</html>
