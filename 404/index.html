@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error 404</title>
+        <meta property="og:title" content="Error">
+        <meta property="og:description" content="Oops, i think you typed something wrong">
+        <meta property="og:type" content="website" >
+        <meta property="og:image" content="/error/error.ico">
+        <link href="/error/error.ico" rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="/error/style.css">
+        <script>
+            window.onload = function(){
+                var url = window.location.href
+
+                document.getElementById('p1').innerHTML = 'Check if there is a typo in ' + url + '.';
+            };
+        </script>
+    </head>
+    <body>
+       <nav class="navbar">
+            <a href="/"><img src="https://www.chocorot.net/res/logo" alt=""></a>
+            <div class="text">
+                <a href="/documentation">Documentation</a>
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="/click">Click Counter</a>
+                        <a href="/height_calculator" class="ddbottom">Height Calculator</a>
+                    </div>
+                </div>
+                <a href="/about" style="float: right;">About</a>
+            </div>
+        </nav>
+        
+        <div class="content">
+            <div class="center">
+                <div class="box">
+                <div class="contents">
+                    <p style="font-size: 33px; font-weight: bold;">Something Wrong</p>
+                    
+                    <div style="font-size: 21px;">
+                        <br><br><p id="p1">check your </p>
+                        <br><p style="display: inline;">If spelling is correct, </p><a style=" text-decoration: none; color: cornflowerblue;" href = "mailto: support@chocorot.net" title="support@chocorot.net">please contect the developer.</a><br>
+                        <br><br><button type="button" onclick="window.location.reload()" class="reload">Reload</button>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

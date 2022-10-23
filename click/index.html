@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content=" user-scalable = no">
+        <meta property="og:title" content="Click Counter">
+        <meta property="og:description" content="Click until you can't!">
+        <meta property="og:type" content="website" >
+        <meta property="og:image" content="click.png">
+        <title>Click Counter</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
+        <link href="click.ico" rel="icon" type="image/x-icon" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="/"><img src="https://www.chocorot.net/res/logo" alt=""></a>
+            <div class="text">
+                <a href="/documentation">Documentation</a>
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="/click">Click Counter</a>
+                        <a href="/height_calculator" class="ddbottom">Height Calculator</a>
+                    </div>
+                </div>
+                <a href="/about" style="float: right;">About</a>
+            </div>
+        </nav>
+        
+        
+        <div class="content">
+            <div><br><br></div>
+            <p><button class="button button1" onclick="clickCounter()" type="button">Click me!</button></p>
+            <div id="result"></div>
+            <p>Reload page to reset the count</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="calculator.ico" rel="icon" type="image/x-icon" />
+        <meta property="og:title" content="Height Calculator">
+        <meta property="og:description" content="A calculator for calculate your height">
+        <meta property="og:type" content="website" >
+        <meta property="og:image" content="calculator.png">
+        <title>Height Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="/"><img src="https://www.chocorot.net/res/logo" alt=""></a>
+            <div class="text">
+                <a href="/documentation">Documentation</a>
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="/click">Click Counter</a>
+                        <a href="/height_calculator" class="ddbottom">Height Calculator</a>
+                    </div>
+                </div>
+                <a href="/about" style="float: right;">About</a>
+            </div>
+        </nav>
+        
+        
+        <div class="content">
+            <div><br><br></div>
+            <div class="center">
+                <div class="box">
+                <h1>Height Calculator</h1>
+                <lable alt="in cm">Your Height:</lable>
+                <input type="number" id="number" min="10" max="300" oninput="javascript: if (this.value > 300) this.value = 300;" alt="in cm">
+                <label for="#a">cm</label><br><br>
+                <button  onclick="myfunction()">Calculate</button><br><br>
+
+            </div>
+            </div>
+            
+            
+        </div>
+    </body>
+</html>
